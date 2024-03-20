@@ -1,0 +1,978 @@
+{
+	"info": {
+		"_postman_id": "62518f7d-3e20-43ae-b6c6-fabc66a5e40f",
+		"name": "Homework 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33498805"
+	},
+	"item": [
+		{
+			"name": "Get all trainers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/trainers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "905"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"389-/gsioHoo2m6in3sJTephFIQo/+o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:08:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"test-ID\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"Jovanovic\",\n        \"email\": \"test@test.com\",\n        \"timeEmployed\": \"3 months\",\n        \"coursesFinished\": \"2\"\n    },\n    {\n        \"id\": \"3b90a2f4-fb04-4c0c-bcbb-654478747f04\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"changed lastName by user\",\n        \"email\": \"s@s\",\n        \"timeEmployed\": \"nno\",\n        \"coursesFinished\": \"2222\"\n    },\n    {\n        \"id\": \"5caa5df8-d53b-4719-ac90-33e66a733bc2\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"SADASASDa\",\n        \"email\": \"s@s\",\n        \"timeEmployed\": \"nno\",\n        \"coursesFinished\": \"2222\"\n    },\n    {\n        \"id\": \"c611c297-c8c4-472e-b644-9887f93bc673\",\n        \"isCurrentlyTeaching\": true,\n        \"firstName\": \"Pero\",\n        \"lastName\": \"Zdero\",\n        \"email\": \"nemam@mail.com\",\n        \"timeEmployed\": \"0 months\",\n        \"coursesFinished\": \"0\"\n    },\n    {\n        \"id\": \"a9060065-aba7-4195-9a7b-885c3fc04280\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Pero\",\n        \"lastName\": \"Zdero\",\n        \"email\": \"nemam@mail.com\",\n        \"timeEmployed\": \"0 months\",\n        \"coursesFinished\": \"0\"\n    }\n]"
+				},
+				{
+					"name": "Get all trainers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainersh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainersh"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "148"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:08:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Error</title>\n    </head>\n    <body>\n        <pre>Cannot GET /trainersh</pre>\n    </body>\n</html>"
+				},
+				{
+					"name": "after delete all",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:15:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Get trainer by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/trainers/5caa5df8-d53b-4719-ac90-33e66a733bc2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"trainers",
+						"5caa5df8-d53b-4719-ac90-33e66a733bc2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/5caa5df8-d53b-4719-ac90-33e66a733bc2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"5caa5df8-d53b-4719-ac90-33e66a733bc2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b2-OU8SpBbqsQxI6h2sUy1jnreTpOM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:07:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"5caa5df8-d53b-4719-ac90-33e66a733bc2\",\n    \"isCurrentlyTeaching\": false,\n    \"firstName\": \"Djordje\",\n    \"lastName\": \"SADASASDa\",\n    \"email\": \"s@s\",\n    \"timeEmployed\": \"nno\",\n    \"coursesFinished\": \"2222\"\n}"
+				},
+				{
+					"name": "Get trainer by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/5caa5df8-d53b-4719-ac90-",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"5caa5df8-d53b-4719-ac90-"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-Ng7s7bZm0f7GEtzSQdNmfiBnijU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:08:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Trainer not found\"\n}"
+				},
+				{
+					"name": "Get trainer by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "905"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"389-/gsioHoo2m6in3sJTephFIQo/+o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:08:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"test-ID\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"Jovanovic\",\n        \"email\": \"test@test.com\",\n        \"timeEmployed\": \"3 months\",\n        \"coursesFinished\": \"2\"\n    },\n    {\n        \"id\": \"3b90a2f4-fb04-4c0c-bcbb-654478747f04\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"changed lastName by user\",\n        \"email\": \"s@s\",\n        \"timeEmployed\": \"nno\",\n        \"coursesFinished\": \"2222\"\n    },\n    {\n        \"id\": \"5caa5df8-d53b-4719-ac90-33e66a733bc2\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Djordje\",\n        \"lastName\": \"SADASASDa\",\n        \"email\": \"s@s\",\n        \"timeEmployed\": \"nno\",\n        \"coursesFinished\": \"2222\"\n    },\n    {\n        \"id\": \"c611c297-c8c4-472e-b644-9887f93bc673\",\n        \"isCurrentlyTeaching\": true,\n        \"firstName\": \"Pero\",\n        \"lastName\": \"Zdero\",\n        \"email\": \"nemam@mail.com\",\n        \"timeEmployed\": \"0 months\",\n        \"coursesFinished\": \"0\"\n    },\n    {\n        \"id\": \"a9060065-aba7-4195-9a7b-885c3fc04280\",\n        \"isCurrentlyTeaching\": false,\n        \"firstName\": \"Pero\",\n        \"lastName\": \"Zdero\",\n        \"email\": \"nemam@mail.com\",\n        \"timeEmployed\": \"0 months\",\n        \"coursesFinished\": \"0\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update Trainer Info",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"changed id by user\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/trainers/test-ID",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"trainers",
+						"test-ID"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\":\"changed lastName by user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/trainers/3b90a2f4-fb04-4c0c-bcbb-65",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"3b90a2f4-fb04-4c0c-bcbb-65"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-Ng7s7bZm0f7GEtzSQdNmfiBnijU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 21:50:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Trainer not found\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lasdasde\":\"changed lastName by user\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/trainers/3b90a2f4-fb04-4c0c-bcbb-65",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"3b90a2f4-fb04-4c0c-bcbb-65"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1b-Ng7s7bZm0f7GEtzSQdNmfiBnijU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:06:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Trainer not found\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"isCurrentlyTeaching\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/trainers/c611c297-c8c4-472e-b644-9887f93bc673",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"c611c297-c8c4-472e-b644-9887f93bc673"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a-bAsFyilMr4Ra1hIU5PyoyFRunpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:07:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Add a trainer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Pero\", \r\n    \"lastName\": \"Zdero\", \r\n     \"email\" : \"nemam@mail.com\", \r\n    \"timeEmployed\": \"0 months\", \r\n     \"coursesFinished\": \"0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3003/trainers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"trainers"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fiasdasdas\" : \"nemam@mail.com\", \r\n    \"timeEmployed\": \"0 months\", \r\n     \"coursesFinished\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-YvRLIHCM8dv1lPtDqrqmdu/KALk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:06:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Invalid data input\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Pero\", \r\n    \"lastName\": \"Zdero\", \r\n     \"email\" : \"nemam@mail.com\", \r\n    \"timeEmployed\": \"0 months\", \r\n     \"coursesFinished\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/trainers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:06:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Created"
+				}
+			]
+		},
+		{
+			"name": "Delete trainer",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/test-ID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"test-ID"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a-bAsFyilMr4Ra1hIU5PyoyFRunpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:13:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Delete trainer",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/test-xc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"test-xc"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-irUshfP6v2NVHCOJtREbs0zfx5U\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:14:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg\": \"Trainer not found in database\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete all trainers",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "delete all",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/trainers/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"trainers",
+								"delete"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"a-bAsFyilMr4Ra1hIU5PyoyFRunpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:14:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3003/home",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"home"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Accept-Ranges",
+							"value": "bytes"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public, max-age=0"
+						},
+						{
+							"key": "Last-Modified",
+							"value": "Wed, 20 Mar 2024 22:19:59 GMT"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"100-18e5df3259e\""
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "256"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Mar 2024 22:22:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <title>Homework 2- Express</title>\n    </head>\n    <body>\n        <h1>Homework 2 - Express </h1>\n    </body>\n</html>"
+				}
+			]
+		}
+	]
+}
