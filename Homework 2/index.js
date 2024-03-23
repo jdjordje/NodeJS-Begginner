@@ -10,6 +10,10 @@ const STATIC_HOME = createPath(["public","index.html"])
 const app = express();
 app.use(express.json());
 
+
+//Add a public folder in the project that will serve an `index.html` statically on route `/home`
+app.use('/home', express.static(STATIC_HOME))
+
 // 1. Get all trainers.
 app.get("/trainers", async (req, res) => {
   try {
@@ -93,9 +97,6 @@ app.delete("/trainers/:id", async(req,res)=>{
       }
 })
 
-
-//Add a public folder in the project that will serve an `index.html` statically on route `/home`
-app.use('/home', express.static(STATIC_HOME))
 
 
 
