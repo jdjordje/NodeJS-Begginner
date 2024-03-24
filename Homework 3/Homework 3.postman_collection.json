@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "416a7f8f-503e-4d32-8fc7-f87b47cd8409",
+		"name": "Homework 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33498805"
+	},
+	"item": [
+		{
+			"name": "get all and filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"students"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "Femle",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "dsd",
+							"disabled": true
+						},
+						{
+							"key": "averageGrade",
+							"value": "ascending",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get student by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3003/students/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3003",
+					"path": [
+						"students",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
