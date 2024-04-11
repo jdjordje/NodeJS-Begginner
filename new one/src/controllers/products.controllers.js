@@ -1,11 +1,10 @@
 import { ProductService } from "../services/product.services.js";
 import { productValidation, updateProductValidation } from "../schemas/products.schema.js";
 
-
 export class ProductController {
   static async getAllProducts(req, res) {
     try {
-      const products = await ProductService.getAllProducts();
+      const products = await ProductService.getAllProducts(req.query);
 
       return res.json(products);
     } catch (error) {
@@ -49,11 +48,11 @@ export class ProductController {
     }
   }
 
-  static async deleteProduct(req,res){
+  static async deleteProduct(req, res) {
     try {
       await ProductService.deleteProduct(req.params.id);
 
-      return res.status(204)
+      return res.sendStatus(204);
     } catch (error) {
       return res.status(400).json({ msg: error.message });
     }
