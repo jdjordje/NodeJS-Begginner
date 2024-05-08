@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "cf4ff1f5-7f4a-4cd9-a6ff-d6260fb2dbef",
+		"name": "Homework Nest JS-Postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33498805"
+	},
+	"item": [
+		{
+			"name": "Get all Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cars/?year=descending",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars",
+						""
+					],
+					"query": [
+						{
+							"key": "car",
+							"value": "AUDI",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "descending"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Car By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cars/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"make\": \"OPEL\",\r\n        \"model\": \"CORSA\",\r\n        \"year\": 2016\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cars/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit car",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"make\" : \"Audi\",\r\n    \"model\" : \"RS8\",\r\n    \"year\" : 2023\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/cars/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/cars/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"cars",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
