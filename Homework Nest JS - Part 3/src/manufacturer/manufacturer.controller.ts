@@ -7,7 +7,7 @@ import { AuthGuard } from "src/auth/auth.guard";
 @Controller(`manufacturer`)
 export class CarManufacturerController {
   constructor(private carManufacturerService: CarsManufacturerServices) {}
-
+ 
   @Get()
   getAllManufacturers() {
     return this.carManufacturerService.getAllManufacturers();
